@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;800&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+
+    --advice-font: 28px;
+
+    --font-weight-light: 300;
+    --font-weight-large: 800;
+
+}
+
+body {
+    background: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main#main-container {
+    background-color: var(--dark-grayish-blue);
+    margin-top: 13%;
+    border-radius: 10px;
+    max-width: 450px;
+    
+    position: relative;
+}
+
+article#advice-container {
+    text-align: center;
+    padding: 25px 30px 35px;
+    color: var(--light-cyan);
+}
+
+#advice-container .advice-id {
+    font-family: 'Manrope', sans-serif;
+    font-weight: var(--font-weight-light);
+    color: var(--neon-green);
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+}
+
+#advice-container .advice-text {
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 15px;
+}
+
+img.divider {
+    width: 100%;
+    background-size: 100% 100%;
+    margin: 15px 0;
+}
+
+#advice-container .clickable-btn {
+    height: 50px;
+    width: 50px;
+    background-color: var(--neon-green);
+    border-radius: 100%;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    top: 90%;
+    margin-left: auto; 
+    margin-right: auto; 
+    cursor: pointer;
+    border-color: var(--neon-green);
+}
+
+#advice-container .clickable-btn:hover {
+    background-color: hsl(150, 100%, 50%);
+    box-shadow: 0 0 20px 0 hsl(150, 100%, 50%);
+}
+
+@media (width <= 400px) {
+    body {
+        padding: 0 10px;
+    }
+    main#main-container {
+        margin-top: 40%;
+    }
+}
